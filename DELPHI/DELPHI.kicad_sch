@@ -4,6 +4,13 @@
 
   (paper "USLedger")
 
+  (title_block
+    (title "D.E.L.P.H.I [Dual Ergolinear Low-Profile Human Interface]")
+    (date "2022-12-01")
+    (rev "1.0")
+    (company "John A. Riggles")
+  )
+
   (lib_symbols
     (symbol "Diode:1N4448WT" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "D" (id 0) (at 0 2.54 0)
@@ -1364,6 +1371,12 @@
   (wire (pts (xy 146.05 88.9) (xy 146.05 91.44))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid ffc12e56-3266-4801-880b-0014fb10696d)
+  )
+
+  (text "U1/U2 footprint is Seeeduino XIAO, actual part is Adafruit QT Py RP2040 [Product ID: 4900]"
+    (at 73.66 184.15 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid f368dbea-157c-46c7-9e91-72c4bc3795c3)
   )
 
   (global_label "COL1R" (shape bidirectional) (at 127 34.29 90) (fields_autoplaced)
