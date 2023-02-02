@@ -25,9 +25,11 @@ DELPHI is a minimal split mechanical keyboard designed to combine ergonomics and
   - USB C
   - Raspberry Pi RP2040 chip
   - STEMMA QT connector (a.k.a. QWiic) [used to connect the two halves...that's the plan, anyway]
+  
+<hr/>
 
 ### TODO
-- QMK firmware support
+- QMK firmware support (also looking into [KMK](https://github.com/KMKfw/kmk_firmware))
 - Firmware coding in general
 - Bottom plate?
 - Top plate?
