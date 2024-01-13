@@ -1,6 +1,6 @@
 # DELPHI-kbd
 
-Hardware v1.0 &copy; 2022 - Software v1.0 &copy; 2024
+Hardware v1.0.0 &copy; 2022 - Software v1.0.0 &copy; 2024
 
 ## Dual Ergolinear Low-Profile Human Interface ##
 DELPHI is a minimal split mechanical keyboard designed to combine ergonomics and an ortholinear layout into a small form factor.
@@ -67,8 +67,16 @@ The setup for DELPHI essentially follows the [Quick Start Guide](http://kmkfw.io
 
 11. Repeat these steps for the **RIGHT** half of DELPHI, being sure to rename the `CIRCUITPY` drive to `DELPHI_R` at step 3 *(must be exactly this!)*
 
+<hr/>
+
 ### TODO
 - Bottom plate [in progress]
 - Top plate [in progress]
 - 3D-printed case?
 - Build guide?
+
+<hr/>
+
+**A note regarding hardware and software versions:**
+
+Hardware/software versions will (try to) adhere to [SEMVER](https://semver.org/). It is my intention that hardware and software which share a `MAJOR` version will be compatible with one another (e.g., hardware version 1.2.3 will still be compatible with software version 1.0.0)
