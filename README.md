@@ -5,19 +5,29 @@ Hardware v1.0 &copy; 2022 - Software v1.0 &copy; 2024
 ## Dual Ergolinear Low-Profile Human Interface ##
 DELPHI is a minimal split mechanical keyboard designed to combine ergonomics and an ortholinear layout into a small form factor.
 
-<img src="/images/DELPHI photo.png" height="600" alt="Photo of assembled keyboard">
- 
-*PCB front view*
+<p align="center">
+    <img src="/images/DELPHI photo.png" height="600" alt="Photo of assembled keyboard">
+    <br/>
+    <br/>
+</p>
 
-<img src="/images/front view.png" height="300" alt="PCB render front view">
+<p align="center">
+    <img src="/images/front view.png" height="300" alt="PCB render front view">
+    <br/>
+    PCB front view
+</p>
 
-*PCB rear view*
+<p align="center">
+    <img src="/images/rear view.png" height="300"  alt="PCB render rear view">
+    <br/>
+    PCB rear view
+</p>
 
-<img src="/images/rear view.png" height="300"  alt="PCB render rear view">
-
-*Layout (yes, it's [COLEMAK](https://en.wikipedia.org/wiki/Colemak))*
-
-<img src="/images/delphi_kle_layout.png" height="290"  alt="Keyboard Layout Editor layout">
+<p align="center">
+    <img src="/images/delphi_kle_layout.png" height="290"  alt="Keyboard Layout Editor layout">
+    <br/>
+    Layout (yes, it's <a href="https://en.wikipedia.org/wiki/Colemak">COLEMAK</a>)
+</p>
 
 ## Features
 - Kailh "Choc" low-profile mechanical switches
