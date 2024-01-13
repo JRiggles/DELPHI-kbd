@@ -5,7 +5,7 @@ Hardware v1.0 &copy; 2022 - Software v1.0 &copy; 2024
 ## Dual Ergolinear Low-Profile Human Interface ##
 DELPHI is a minimal split mechanical keyboard designed to combine ergonomics and an ortholinear layout into a small form factor.
 
-<img src="/images/DELPHI photo.heic" height="300" alt="Photo of ssembled keyboard">
+<img src="/images/DELPHI photo.png" height="600" alt="Photo of assembled keyboard">
  
 *PCB front view*
 
@@ -61,3 +61,4 @@ The setup for DELPHI essentially follows the [Quick Start Guide](http://kmkfw.io
 - Bottom plate [in progress]
 - Top plate [in progress]
 - 3D-printed case?
+- Build guide?
