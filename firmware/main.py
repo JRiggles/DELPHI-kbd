@@ -1,5 +1,5 @@
 """
-D.E.L.P.H.I. keyboard - Firmware v1.0.0
+D.E.L.P.H.I. keyboard - Firmware v1.0.1
 
 MIT License
 
@@ -27,10 +27,12 @@ SOFTWARE.
 import board as bd
 from storage import getmount
 
+from kmk.extensions.stringy_keymaps import StringyKeymaps
 from kmk.keys import KC
 from kmk.kmk_keyboard import KMKKeyboard
 from kmk.modules.holdtap import HoldTap
 from kmk.modules.layers import Layers
+from kmk.modules.oneshot import OneShot
 from kmk.modules.split import Split
 from kmk.scanners import DiodeOrientation
 
@@ -55,12 +57,18 @@ else:
         'must be either "DELPHI_L" or "DELPHI_R"'
     )
 
-# instantiate modules
+# instantiate modules and extensions
 holdtap = HoldTap()
 keyboard.modules.append(holdtap)
 
+oneshot = OneShot()
+keyboard.modules.append(oneshot)
+
 layers = Layers()
 keyboard.modules.append(layers)
+
+stringyKeymaps = StringyKeymaps()
+keyboard.extensions.append(stringyKeymaps)
 
 # enable split - data pin SDA1 is the STEMMA QT data pin
 split = Split(data_pin=bd.SDA1, use_pio=True, split_flip=False)
@@ -68,43 +76,62 @@ keyboard.modules.append(split)  # enable split
 
 keyboard.keymap = [
     [  # layer 0 (default)
-        KC.NO, KC.NO, KC.W, KC.F, KC.P, KC.G,  # row 1 Left
-        KC.J, KC.L, KC.U, KC.Y, KC.NO, KC.NO,  # row 1 Right
-
-        KC.TAB, KC.Q, KC.R, KC.S, KC.T, KC.D,  # 2L
-        KC.H, KC.N, KC.E, KC.I, KC.SCLN, KC.QUOT,  # 2R
-
-        KC.BKDL, KC.A, KC.X, KC.C, KC.V, KC.B,  # 3L
-        KC.K, KC.M, KC.COMMA, KC.DOT, KC.O, KC.HT(KC.ENT, KC.RSFT),  # 3R
-
-        KC.LCTL, KC.Z,  KC.NO, KC.LALT, KC.LGUI, KC.MO(1),  # 4L
-        KC.HT(KC.SPC, KC.MO(2)), KC.NO, KC.SLSH, KC.NO, KC.LPRN, KC.RPRN,  # 4R
+        # row 1 left
+        'NO', 'NO', 'W', 'F', 'P', 'G',
+        # row 1 right
+        'J', 'L', 'U', 'Y', 'NO', 'NO',
+        # row 2 left
+        'TAB', 'Q', 'R', 'S', 'T', 'D',
+        # row 2 right
+        'H', 'N', 'E', 'I', 'SCOLON', 'QUOTE',
+        # row 3 left
+        'BKDL', 'A', 'X', 'C', 'V', 'B',
+        # row 3 right
+        'K', 'M', 'COMMA', 'DOT', 'O', 'ENTER',
+        # row 4 left
+        KC.HT(KC.OS('LCTRL'), 'LSHIFT'), 'Z',  'NO', 'LALT', 'LGUI', KC.MO(1),
+        # row 4 right
+        KC.LT(2, 'SPACE'), 'NO', 'SLASH', 'NO', 'LEFT_PAREN',
+        KC.HT('RIGHT_PAREN', 'RSHIFT'),
     ],
     [  # layer 1
-        KC.NO, KC.NO, KC.N2, KC.N3, KC.N4, KC.N5,  # 1R
-        KC.N6, KC.N7, KC.N8, KC.N9, KC.NO, KC.NO,  # 1L
+        # row 1 left
+        'NO', 'NO', 'N2', 'N3', 'N4', 'N5',
+        # row 1 right
+        'N6', 'N7', 'N8', 'N9', 'NO', 'NO',
+        # row 2 left
+        'GESC', 'N1', 'NO', 'NO', 'NO', 'NO',
+        # row 2 right
+        'NO', 'N4', 'N5', 'N6', 'N0', 'BSLASH',
+        # row 3 left
+        'TRNS', 'NO', 'NO', 'NO', 'NO', 'NO',
+        # row 3 right
+        'NO', 'N1', 'N2', 'N3', 'NO', 'TRNS',
+        # row 4 left
+        'TRNS', 'NO',  'NO', 'TRNS', 'TRNS', 'TRNS',
+        # row 4 right
+        'TRNS', 'NO', 'N0', 'NO', 'LBRACKET',
+        KC.HT('RBRACKET', 'RSHIFT'),
 
-        KC.GESC, KC.N1, KC.NO, KC.NO, KC.NO, KC.NO,  # 2L
-        KC.NO, KC.N4, KC.N5, KC.N6, KC.N0, KC.BSLS,  # 2R
-
-        KC.DEL, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO,  # 3L
-        KC.NO, KC.N1, KC.N2, KC.N3, KC.NO, KC.TRNS,  # 3R
-
-        KC.TRNS, KC.NO,  KC.NO, KC.TRNS, KC.TRNS, KC.TRNS,  # 4L
-        KC.TRNS, KC.NO, KC.N0, KC.NO, KC.LBRC, KC.RBRC,  # 4R
     ],
     [  # layer 2
-        KC.NO, KC.NO, KC.AT, KC.HASH, KC.DLR, KC.PERC,  # 1R
-        KC.CIRC, KC.AMPR, KC.ASTR, KC.LPRN, KC.NO, KC.NO,  # 1L
-
-        KC.TILD, KC.EXLM, KC.NO, KC.NO, KC.NO, KC.NO,  # 2L
-        KC.NO, KC.UP, KC.MINS, KC.EQL, KC.RPRN, KC.PIPE,  # 2R
-
-        KC.TRNS, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO,  # 3L
-        KC.LEFT, KC.DOWN, KC.RGHT, KC.NO, KC.NO, KC.TRNS,  # 3R
-
-        KC.TRNS, KC.NO,  KC.NO, KC.TRNS, KC.TRNS, KC.TRNS,  # 4L
-        KC.TRNS, KC.NO, KC.NO, KC.NO, KC.LCBR, KC.RCBR,  # 4R
+        # row 1 left
+        'NO', 'NO', 'AT', 'HASH', 'DOLLAR', 'PERCENT',
+        # row 1 right
+        'CIRCUMFLEX', 'AMPERSAND', 'ASTERISK', 'LEFT_PAREN', 'NO', 'NO',
+        # row 2 left
+        'TILDE', 'EXCLAIM', 'NO', 'NO', 'PGUP', 'NO',
+        # row 2 right
+        'NO', 'UP', 'MINUS', 'EQUAL', 'RIGHT_PAREN', 'PIPE',
+        # row 3 left
+        'TRNS', 'NO', 'NO', 'HOME', 'PGDOWN', 'END',
+        # row 3 right
+        'LEFT', 'DOWN', 'RGHT', 'NO', 'NO', 'TRNS',
+        # row 4 left
+        'TRNS', 'NO',  'NO', 'TRNS', 'TRNS', 'TRNS',
+        # row 4 right
+        'TRNS', 'NO', 'NO', 'NO', 'LEFT_CURLY_BRACE',
+        KC.HT('RIGHT_CURLY_BRACE', 'RSHIFT'),
     ],
 ]
 
