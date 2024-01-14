@@ -1,4 +1,6 @@
-<img src="/images/DELPHI logo white.svg" height="92" alt="DELPHI_KBD logo in white">
+<p align="center">
+    <img src="/images/DELPHI logo white.svg" height="92" alt="DELPHI_KBD logo in white">
+</p>
 
 Hardware v1.0.0 &copy; 2022 - Software v1.0.0 &copy; 2024
 
