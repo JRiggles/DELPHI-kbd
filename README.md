@@ -24,6 +24,18 @@ DELPHI is a minimal split mechanical keyboard designed to combine ergonomics and
 </p>
 
 <p align="center">
+    <img src="/images/DELPHI plate front.png" height="322" alt="PCB render front view">
+    <br/>
+    Plates front view
+</p>
+
+<p align="center">
+    <img src="/images/DELPHI plate rear.png" height="322"  alt="PCB render rear view">
+    <br/>
+    Plates rear view
+</p>
+
+<p align="center">
     <img src="/images/delphi_kle_layout.png" height="290"  alt="Keyboard Layout Editor layout">
     <br/>
     <a href="http://www.keyboard-layout-editor.com/##@_name=D.E.L.P.H.I.%20FULL&author=John%20Riggles&pcb:false&plate:false%3B&@_x:2&c=%231f1f1f&t=%23ffffff&p=CHICKLET%3B&=2%0A%0A%0A%2F@%0A%0A%0A%0A%0A%0AW&=3%0A%0A%0A%23%0A%0A%0A%0A%0A%0AF&=4%0A%0A%0A$%0A%0A%0A%0A%0A%0AP&=5%0A%0A%0A%25%0A%0A%0A%0A%0A%0AG&_x:1%3B&=6%0A%0A%0A%5E%0A%0A%0A%0A%0A%0AJ&=7%0A%0A%0A%2F&%0A%0A%0A%0A%0A%0AL&=8%0A%0A%0A*%0A%0A%0A%0A%0A%0AU&=9%0A%0A%0A(%0A%0A%0A%0A%0A%0AY%3B&@=GESC%0A%0A%0A~%0A%0A%0A%0A%0A%0ATAB&=1%0A%0A%0A!%0A%0A%0A%0A%0A%0AQ&_a:7%3B&=R&=S&_n:true%3B&=T&=D&_x:1%3B&=H&_a:4&n:true%3B&=4%0A%0A%0AUP%0A%0A%0A%0A%0A%0AN&=5%0A%0A%0A-%0A%0A%0A%0A-%0A%0AE&=6%0A%0A%0A%2F=%0A%0A%0A%0A+%0A%0AI&=0%0A%0A%0A)%0A%0A%0A%0A%0A%2F:%0A%2F%3B&=%5C%0A%0A%0A%7C%0A%0A%0A%0A%0A%22%0A'%3B&@=DEL%0A%0A%0Atrns%0A%0A%0A%0A%0A%0ABKDL&_a:7%3B&=A&=X&=C&=V&=B&_x:1&a:4%3B&=%0A%0A%0ALEFT%0A%0A%0A%0A%0A%0AK&=1%0A%0A%0ADOWN%0A%0A%0A%0A%0A%0AM&=2%0A%0A%0ARIGHT%0A%0A%0A%0A%0A%3C%0A,&=3%0A%0A%0A%0A%0A%0A%0A%0A%3E%0A.&_a:7%3B&=O&_a:4&f:2%3B&=trns%0A%0A%0Atrns%0A%0A%0A%0A%0A%0AENT%20%5BRSFT%5D%3B&@_f:3%3B&=trns%0A%0A%0Atrns%0A%0A%0A%0A%0A%0ALCTL&_a:7%3B&=Z&_x:1&a:4%3B&=trns%0A%0A%0Atrns%0A%0A%0A%0A%0A%0ALALT&=trns%0A%0A%0Atrns%0A%0A%0A%0A%0A%0ALGUI&=trns%0A%0A%0Atrns%0A%0A%0A%0A%0A%0AMO(1)&_x:1&w:2%3B&=trns%0A%0A%0Atrns%0A%0A%0A%0A%0A%0ASPC%20%5BMO(2)%5D&=0%0A%0A%0A%0A%0A%0A%0A%0A%3F%0A%2F%2F&_x:1%3B&=%5B%0A%0A%0A%7B%0A%0A%0A%0A%0A%0A(&=%5D%0A%0A%0A%7D%0A%0A%0A%0A%0A%0A)%3B&@_c=%23ffffff&t=%23121212&w:4&d:true%3B&=L1%0A%0A%0AL2%0ALAYER%20LEGEND%0A%0A%0A%5BHOLD%5D%0ASHIFT%0AL0&_a:5&w:4&d:true%3B&=%0Astaggered%20down%201%20row%0A%0A%0A(pinky%20offset)%0A%0ACols.%20L%201%20%2F&%202,%20R%205%20%2F&%206">Layout</a> (yes, it's <a href="https://en.wikipedia.org/wiki/Colemak">COLEMAK</a>)
