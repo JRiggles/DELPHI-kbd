@@ -2,7 +2,7 @@
     <img src="/images/DELPHI logo white.svg" height="92" alt="DELPHI_KBD logo in white">
 </p>
 
-Hardware v1.0.0 &copy; 2022 - Software v1.0.2 &copy; 2024
+Hardware v1.0.1 &copy; 2022 - Software v1.0.2 &copy; 2024
 
 ## Dual Ergolinear Low-Profile Human Interface ##
 DELPHI is a minimal split mechanical keyboard designed to combine ergonomics and an ortholinear layout into a small form factor.
