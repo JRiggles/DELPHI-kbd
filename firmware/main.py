@@ -92,7 +92,7 @@ keyboard.keymap = [
         KC.HT(KC.OS(KC.LCTRL), KC.LSHIFT), 'Z',  'NO', 'LALT', 'LGUI',
         KC.MO(1),
         # row 4 right
-        KC.LT(2, 'SPACE'), 'NO', 'SLASH', 'NO', 'LEFT_PAREN',
+        KC.LT(2, KC.SPACE), 'NO', 'SLASH', 'NO', 'LEFT_PAREN',
         KC.HT(KC.RIGHT_PAREN, KC.RSHIFT),
     ],
     [  # layer 1
