@@ -1,5 +1,5 @@
 """
-D.E.L.P.H.I. keyboard - Firmware v1.0.1
+D.E.L.P.H.I. keyboard - Firmware v1.0.2
 
 MIT License
 
@@ -67,12 +67,12 @@ keyboard.modules.append(oneshot)
 layers = Layers()
 keyboard.modules.append(layers)
 
-stringyKeymaps = StringyKeymaps()
-keyboard.extensions.append(stringyKeymaps)
-
 # enable split - data pin SDA1 is the STEMMA QT data pin
 split = Split(data_pin=bd.SDA1, use_pio=True, split_flip=False)
 keyboard.modules.append(split)  # enable split
+
+stringyKeymaps = StringyKeymaps()
+keyboard.extensions.append(stringyKeymaps)
 
 keyboard.keymap = [
     [  # layer 0 (default)
@@ -89,10 +89,11 @@ keyboard.keymap = [
         # row 3 right
         'K', 'M', 'COMMA', 'DOT', 'O', 'ENTER',
         # row 4 left
-        KC.HT(KC.OS('LCTRL'), 'LSHIFT'), 'Z',  'NO', 'LALT', 'LGUI', KC.MO(1),
+        KC.HT(KC.OS(KC.LCTRL), KC.LSHIFT), 'Z',  'NO', 'LALT', 'LGUI',
+        KC.MO(1),
         # row 4 right
         KC.LT(2, 'SPACE'), 'NO', 'SLASH', 'NO', 'LEFT_PAREN',
-        KC.HT('RIGHT_PAREN', 'RSHIFT'),
+        KC.HT(KC.RIGHT_PAREN, KC.RSHIFT),
     ],
     [  # layer 1
         # row 1 left
@@ -111,7 +112,7 @@ keyboard.keymap = [
         'TRNS', 'NO',  'NO', 'TRNS', 'TRNS', 'TRNS',
         # row 4 right
         'TRNS', 'NO', 'N0', 'NO', 'LBRACKET',
-        KC.HT('RBRACKET', 'RSHIFT'),
+        KC.HT(KC.RBRACKET, KC.RSHIFT),
 
     ],
     [  # layer 2
@@ -131,7 +132,7 @@ keyboard.keymap = [
         'TRNS', 'NO',  'NO', 'TRNS', 'TRNS', 'TRNS',
         # row 4 right
         'TRNS', 'NO', 'NO', 'NO', 'LEFT_CURLY_BRACE',
-        KC.HT('RIGHT_CURLY_BRACE', 'RSHIFT'),
+        KC.HT(KC.RIGHT_CURLY_BRACE, KC.RSHIFT),
     ],
 ]
 
