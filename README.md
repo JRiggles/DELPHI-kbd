@@ -16,13 +16,13 @@ DELPHI is a minimal split mechanical keyboard designed to combine ergonomics and
 <p align="center">
     <img src="/images/DELPHI kbd front.png" height="322" alt="PCB render front view">
     <br/>
-    PCB front view
+    PCB top view
 </p>
 
 <p align="center">
     <img src="/images/DELPHI kbd rear.png" height="322"  alt="PCB render rear view">
     <br/>
-    PCB rear view
+    PCB bottom view
 </p>
 
 <p align="center">
