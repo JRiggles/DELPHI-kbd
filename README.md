@@ -2,7 +2,7 @@
     <img src="/images/DELPHI logo white.svg" height="92" alt="DELPHI_KBD logo in white">
 </p>
 
-Hardware v1.0.1 &copy; 2022 - Software v1.0.2 &copy; 2024
+Hardware v1.0.1, Software v1.0.2 &copy; 2022-24
 
 ## Dual Ergolinear Low-Profile Human Interface ##
 DELPHI is a minimal split mechanical keyboard designed to combine ergonomics and an ortholinear layout into a small form factor.
@@ -44,13 +44,13 @@ DELPHI is a minimal split mechanical keyboard designed to combine ergonomics and
 </p>
 
 ## Features
--
+- "Ergolinear" layout combines an ortholinear (columnar) layout with staggered pinky rows for ergonomics
+  - Outermost 2 columns on each half are staggered down 1U for easier reach
 - Kailh "Choc" low-profile mechanical switches
 - Hot-swappable sockets
 - Split board (optional, I suppose)
 - 40-42 keys (40%) total [20-21 keys on each half]
 - Thumb cluster on each half supports a 3&times;1U or a 1&times;1U + 1&times;2U layout
-- Outermost 2 columns on each half are staggered down 1U for easier pinky reach
 - Wired connection to PC (either half can be connected via USB)
 - Wired connection between Left and Right boards (via Adafruit STEMMA QT)
 - Dimensions: 4.65" &times; 3.15" (118mm &times; 80mm) [each half]
