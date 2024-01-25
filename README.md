@@ -70,12 +70,12 @@ DELPHI is a minimal split mechanical keyboard designed to combine ergonomics and
 
 ## Software Setup
 
-The setup for DELPHI essentially follows the [Quick Start Guide](http://kmkfw.io/docs/Getting_Started#tldr-quick-start-guide) for KMK:
+The setup for DELPHI essentially follows the [Quick Start Guide](http://kmkfw.io/docs/Getting_Started#tldr-quick-start-guide) for KMK, with some changes:
 
 1. Connect the **LEFT** half of DELPHI to your computer via USB
 2. Download and install [CircuitPython 8.2.9](https://circuitpython.org/board/adafruit_qtpy_rp2040/) for the Adafruit QT Py RP2040
 3. [Rename](https://learn.adafruit.com/welcome-to-circuitpython/renaming-circuitpy) the `CIRCUITPY` USB drive to `DELPHI_L` *(must be exactly this!)*
-4. Download and unzip the [KMK Firmware](https://github.com/KMKfw/kmk_firmware)
+4. Download and unzip [KMK Firmware](https://github.com/KMKfw/kmk_firmware)
 5. Download DELPHI [boot.py](https://github.com/JRiggles/DELPHI-kbd/blob/main/firmware/boot.py)
 6. Download DELPHI [main.py](https://github.com/JRiggles/DELPHI-kbd/blob/main/firmware/main.py)
 7. Copy the `kmk` folder to the root of the `DELPHI_L` drive
