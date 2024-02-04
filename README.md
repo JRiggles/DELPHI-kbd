@@ -2,7 +2,7 @@
     <img src="/images/DELPHI logo white.svg" height="92" alt="DELPHI_KBD logo in white">
 </p>
 
-Hardware v1.0.1, Software v1.0.2 &copy; 2022-24
+Hardware v1.0.2, Software v1.0.2 &copy; 2022-24
 
 ## Dual Ergolinear Low-Profile Human Interface ##
 DELPHI is a minimal split mechanical keyboard designed to combine ergonomics and an ortholinear layout into a small form factor.
@@ -63,7 +63,9 @@ DELPHI is a minimal split mechanical keyboard designed to combine ergonomics and
   - STEMMA QT connector (a.k.a. QWiic) [used to connect the two halves over I2C]
     - **NOTE**: a [STEMMA QT cable](https://www.adafruit.com/product/5385) is required to connect the halves - 300mm or 400mm length is recommended
       (the cable pictured above is 300mm)
-    
+
+*DELPHI ***might*** also work with the SAMD21 [Adafruit QT PY](https://www.adafruit.com/product/4600) as long as you solder on the "optional"\* [2MB SPI Flash IC](https://www.adafruit.com/product/4763), but I haven't been able to get this board to work on Windows 11 (YMMV). \*KMK firmware will not fit on this board without the extra Flash memory.
+  
 ## Software
 - [CircuitPython 8.2.9](https://circuitpython.org/board/adafruit_qtpy_rp2040/)
 - [KMK Firmware](https://github.com/KMKfw/kmk_firmware)
@@ -87,7 +89,7 @@ The setup for DELPHI essentially follows the [Quick Start Guide](http://kmkfw.io
 <hr/>
 
 ### TODO
-- 3D-printed case?
+- 3D-printed case [WIP]
 - Build guide?
 - [Peg](https://peg.software/) compatibility? - if I can figure it out...
 
