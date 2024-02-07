@@ -54,9 +54,6 @@ DELPHI is a minimal split mechanical keyboard designed to combine ergonomics and
 - Wired connection to PC (either half can be connected via USB)
 - Wired connection between Left and Right boards (via Adafruit STEMMA QT)
 - Dimensions: 4.65" &times; 3.15" (118mm &times; 80mm) [each half]
-- PCB top and bottom [plates](https://github.com/JRiggles/DELPHI-kbd/blob/main/plates) (photo coming soon!)
-  - **NOTE**: one plate set covers one *half* of DELPHI - you'll need to use two sets to cover both halves
-  - Main board mounts to bottom plate via 5&times; M2&times;6mm standoffs per-half
 - [Adafruit QT Py RP2040 microcontroller](https://www.adafruit.com/product/4900) (2&times;)
   - USB C
   - Raspberry Pi RP2040 chip
@@ -64,7 +61,20 @@ DELPHI is a minimal split mechanical keyboard designed to combine ergonomics and
     - **NOTE**: a [STEMMA QT cable](https://www.adafruit.com/product/5385) is required to connect the halves - 300mm or 400mm length is recommended
       (the cable pictured above is 300mm)
 
-*DELPHI ***might*** also work with the SAMD21 [Adafruit QT PY](https://www.adafruit.com/product/4600) as long as you solder on the "optional"\* [2MB SPI Flash IC](https://www.adafruit.com/product/4763), but I haven't been able to get this board to work on Windows 11 (YMMV). \*KMK firmware will not fit on this board without the extra Flash memory.
+> DELPHI ***might*** also work with the SAMD21 [Adafruit QT PY](https://www.adafruit.com/product/4600) as long as you solder on the "optional"\* [2MB SPI Flash IC](https://www.adafruit.com/product/4763), but I haven't been able to get this board to work on Windows 11 (YMMV). 
+>
+> \*KMK firmware will not fit on this board without the extra Flash memory.
+
+## Optional Accessories
+- PCB top and bottom [plates](https://github.com/JRiggles/DELPHI-kbd/blob/main/plates) (photo coming soon!)
+  - **NOTE**: one plate set covers one *half* of DELPHI - you'll need to use two sets to cover both halves
+  - Main board mounts to bottom plate via qty. 5 M2&times;6mm standoffs ***per-half***
+- 3D printable case, the ["Edge Case"](https://github.com/JRiggles/DELPHI-kbd/blob/main/cases) (assumes you're using at least the bottom PCB plate)
+  - **NOTE**: the STL is for the LEFT side; it will need to be *mirrored* in your slicer of choice to accommodate the RIGHT side
+  - There are two case variants:
+    - Edge Case LP (low-profile, lines up with bottom plate and main PCB)
+    - Edge Case HP (high-profile, lines up with bottom plate and top plate)
+    - Presupported Lychee Slicer scene files (\*.lys) are included for each case variant
   
 ## Software
 - [CircuitPython 8.2.9](https://circuitpython.org/board/adafruit_qtpy_rp2040/)
@@ -89,7 +99,6 @@ The setup for DELPHI essentially follows the [Quick Start Guide](http://kmkfw.io
 <hr/>
 
 ### TODO
-- 3D-printed case [WIP]
 - Build guide?
 - [Peg](https://peg.software/) compatibility? - if I can figure it out...
 
