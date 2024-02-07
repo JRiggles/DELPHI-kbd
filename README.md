@@ -26,18 +26,6 @@ DELPHI is a minimal split mechanical keyboard designed to combine ergonomics and
 </p>
 
 <p align="center">
-    <img src="/images/DELPHI plate front.png" height="322" alt="PCB render front view">
-    <br/>
-    Plates front view (i.e., left side top and bottom plates)
-</p>
-
-<p align="center">
-    <img src="/images/DELPHI plate rear.png" height="322"  alt="PCB render rear view">
-    <br/>
-    Plates rear view (i.e., right side bottom and top plates)
-</p>
-
-<p align="center">
     <img src="/images/delphi_kle_layout.png" height="776"  alt="Keyboard Layout Editor layout">
     <br/>
     <a href="http://www.keyboard-layout-editor.com/##@_name=D.E.L.P.H.I.%20FULL&author=John%20Riggles&pcb:false&plate:false%3B&@_a:7&w:2&d:true%3B&=LAYER%200&_c=%231f1f1f&t=%23ffffff&p=CHICKLET%3B&=W&=F&=P&=G&_x:1%3B&=J&=L&=U&=Y%3B&@=TAB&=Q&=R&=S&_n:true%3B&=T&=D&_x:1%3B&=H&_n:true%3B&=N&=E&=I&_a:5%3B&=%2F:%0A%0A%0A%0A%0A%0A%2F%3B&=%22%0A%0A%0A%0A%0A%0A'%3B&@_a:7%3B&=BKDL&=A&=X&=C&=V&=B&_x:1%3B&=K&=M&_a:5%3B&=%3C%0A%0A%0A%0A%0A%0A,&=%3E%0A%0A%0A%0A%0A%0A.&_a:7%3B&=O&_f:2%3B&=ENTER%3B&@_a:4&f:1%3B&=1shot%0A%0Ahold%0A%0A%0A%0ACTL%0ASFT&_a:7&f:3%3B&=Z&_x:1%3B&=LALT&=LGUI&=MO(1)&_x:1&w:2%3B&=SPC%20%5BMO(2)%5D&_a:5%3B&=%3F%0A%0A%0A%0A%0A%0A%2F%2F&_x:1&a:7%3B&=(&_a:4&f:2%3B&=tap%0A%0Ahold%0A%0A%0A%0A)%0ASFT%3B&@_y:1&c=%23cccccc&t=%23000000&p=&a:7&f:3&w:2&d:true%3B&=LAYER%201&_c=%231f1f1f&t=%23ffffff&p=CHICKLET%3B&=2&=3&=4&=5&_x:1%3B&=6&=7&=8&=9%3B&@=GESC&=1&=&=&_n:true%3B&=&=&_x:1%3B&=&_n:true%3B&=4&=5&=6&=0&_a:5%3B&=%7C%0A%0A%0A%0A%0A%0A%5C%3B&@_a:7%3B&=TRNS&=&=&=&=&=&_x:1%3B&=&=1&=2&=3&=&_f:2%3B&=TRNS%3B&@_f:3%3B&=TRNS&=&_x:1%3B&=TRNS&=TRNS&=TRNS&_x:1&w:2%3B&=TRNS&=0&_x:1%3B&=%5B&_a:4&f:2%3B&=tap%0A%0Ahold%0A%0A%0A%0A%5D%0ASFT%3B&@_y:1&c=%23cccccc&t=%23000000&p=&a:7&f:3&w:2&d:true%3B&=LAYER%202&_c=%231f1f1f&t=%23ffffff&p=CHICKLET%3B&=%2F@&=%23&=$&=%25&_x:1%3B&=%5E&=%2F&&=*&=(%3B&@=~&=!&=&=&_n:true%3B&=PGUP&=&_x:1%3B&=&_n:true%3B&=UP&_a:5%3B&=%2F_%0A%0A%0A%0A%0A%0A-&=+%0A%0A%0A%0A%0A%0A%2F=&_a:7%3B&=)&=%7C%3B&@=TRNS&=&=&=HOME&=PGDN&=END&_x:1%3B&=LEFT&=DOWN&=RIGHT&=&=&_f:2%3B&=TRNS%3B&@_f:3%3B&=TRNS&=&_x:1%3B&=TRNS&=TRNS&=TNRS&_x:1&w:2%3B&=TRNS&=&_x:1%3B&=%7B&_a:4&f:2%3B&=tap%0A%0Ahold%0A%0A%0A%0A%7D%0ASFT">Layout</a> (yes, it's <a href="https://en.wikipedia.org/wiki/Colemak">COLEMAK</a>)
@@ -58,17 +46,31 @@ DELPHI is a minimal split mechanical keyboard designed to combine ergonomics and
   - USB C
   - Raspberry Pi RP2040 chip
   - STEMMA QT connector (a.k.a. QWiic) [used to connect the two halves over I2C]
-    - **NOTE**: a [STEMMA QT cable](https://www.adafruit.com/product/5385) is required to connect the halves - 300mm or 400mm length is recommended
-      (the cable pictured above is 300mm)
+    - **NOTE**: a [STEMMA QT cable](https://www.adafruit.com/product/5385) is required to connect the halves - 300mm or 400mm length is recommended<br/>(the cable pictured above is 300mm)
+  <br/>
 
-> DELPHI ***might*** also work with the SAMD21 [Adafruit QT PY](https://www.adafruit.com/product/4600) as long as you solder on the "optional"\* [2MB SPI Flash IC](https://www.adafruit.com/product/4763), but I haven't been able to get this board to work on Windows 11 (YMMV). 
->
-> \*KMK firmware will not fit on this board without the extra Flash memory.
+  > DELPHI ***might*** also work with the SAMD21 [Adafruit QT PY](https://www.adafruit.com/product/4600) as long as you solder on the "optional"\* [2MB SPI Flash IC](https://www.adafruit.com/product/4763), but I haven't been able to get this board to work on Windows 11 (YMMV). 
+  >
+  > \*KMK firmware will not fit on this board without the extra Flash memory.
 
 ## Optional Accessories
 - PCB top and bottom [plates](https://github.com/JRiggles/DELPHI-kbd/blob/main/plates) (photo coming soon!)
   - **NOTE**: one plate set covers one *half* of DELPHI - you'll need to use two sets to cover both halves
   - Main board mounts to bottom plate via qty. 5 M2&times;6mm standoffs ***per-half***
+  > It's recommended that you use at least the bottom plate on each half of DELPHI in order to protect the components and avoid hitting the microcontroller's reset / boot buttons 
+ 
+<p align="center">
+    <img src="/images/DELPHI plate front.png" height="322" alt="PCB render front view">
+    <br/>
+    Plates front view (i.e., left side top and bottom plates)
+</p>
+
+<p align="center">
+    <img src="/images/DELPHI plate rear.png" height="322"  alt="PCB render rear view">
+    <br/>
+    Plates rear view (i.e., right side bottom and top plates)
+</p>
+
 - 3D printable case, the ["Edge Case"](https://github.com/JRiggles/DELPHI-kbd/blob/main/cases) (assumes you're using at least the bottom PCB plate)
   - **NOTE**: the STL is for the LEFT side; it will need to be *mirrored* in your slicer of choice to accommodate the RIGHT side
   - There are two case variants:
