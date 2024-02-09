@@ -45,19 +45,21 @@ DELPHI is a minimal split mechanical keyboard designed to combine ergonomics and
 - [Adafruit QT Py RP2040 microcontroller](https://www.adafruit.com/product/4900) (2&times;)
   - USB C
   - Raspberry Pi RP2040 chip
-  - STEMMA QT connector (a.k.a. QWiic) [used to connect the two halves over I2C]
-    - **NOTE**: a [STEMMA QT cable](https://www.adafruit.com/product/5385) is required to connect the halves - 300mm or 400mm length is recommended<br/>(the cable pictured above is 300mm)
+  - STEMMA QT connector (a.k.a. Qwiic)
+> [!IMPORTANT]
+> A [STEMMA QT cable](https://www.adafruit.com/product/5385) (or compatible equivalent) is required to connect the halves<br/>300mm or 400mm length is recommended (the cable pictured above is 300mm)
   <br/>
 
-  > DELPHI ***might*** also work with the SAMD21 [Adafruit QT PY](https://www.adafruit.com/product/4600) as long as you solder on the "optional"\* [2MB SPI Flash IC](https://www.adafruit.com/product/4763), but I haven't been able to get this board to work on Windows 11 (YMMV). 
+  > DELPHI ***might*** also work with the SAMD21 [Adafruit QT PY](https://www.adafruit.com/product/4600) as long as you solder on the "optional"<sup>*</sup> [2MB SPI Flash IC](https://www.adafruit.com/product/4763), but I haven't been able to get this board to work on Windows 11 (YMMV). 
   >
-  > \*KMK firmware will not fit on this board without the extra Flash memory.
+  > <sup>*</sup>KMK firmware will not fit on this board without the extra Flash memory.
 
-## Optional Accessories
-- PCB top and bottom [plates](https://github.com/JRiggles/DELPHI-kbd/blob/main/plates) (photo coming soon!)
-  - **NOTE**: one plate set covers one *half* of DELPHI - you'll need to use two sets to cover both halves
-  - Main board mounts to bottom plate via qty. 5 M2&times;6mm standoffs ***per-half***
-  > It's recommended that you use at least the bottom plate on each half of DELPHI in order to protect the components and avoid hitting the microcontroller's reset / boot buttons 
+## Accessories
+### PCB top and bottom [plates](https://github.com/JRiggles/DELPHI-kbd/blob/main/plates) (photo coming soon!)
+> [!NOTE]
+>  - One plate set covers one *half* of DELPHI - you'll need to use two sets to cover both halves
+>  - The main PCB mounts to bottom plate via qty. 5 M2&times;6mm standoffs ***per-half***
+>  - It's recommended that you use at least the bottom plate on each half of DELPHI in order to protect the components and avoid hitting the microcontroller's reset / boot buttons 
  
 <p align="center">
     <img src="/images/DELPHI plate front.png" height="322" alt="PCB render front view">
@@ -71,12 +73,15 @@ DELPHI is a minimal split mechanical keyboard designed to combine ergonomics and
     Plates rear view (i.e., right side bottom and top plates)
 </p>
 
-- 3D printable case, the ["Edge Case"](https://github.com/JRiggles/DELPHI-kbd/blob/main/cases) (assumes you're using at least the bottom PCB plate)
-  - **NOTE**: the STL is for the LEFT side; it will need to be *mirrored* in your slicer of choice to accommodate the RIGHT side
-  - There are two case variants:
-    - Edge Case LP (low-profile, lines up with bottom plate and main PCB)
-    - Edge Case HP (high-profile, lines up with bottom plate and top plate)
-    - Presupported Lychee Slicer scene files (\*.lys) are included for each case variant
+### 3D printable case: the ["Edge Case"](https://github.com/JRiggles/DELPHI-kbd/blob/main/cases) 
+> [!NOTE]
+>  - This case assumes you're using at least the bottom PCB plate (in addition to the main PCB)
+>  - The STL is for the LEFT side; it will need to be *mirrored* in your slicer of choice to accommodate the RIGHT side
+
+There are two case variants:
+  - Edge Case LP (low-profile, lines up with bottom plate and main PCB)
+  - Edge Case HP (high-profile, lines up with bottom plate and top plate)
+  > Presupported Lychee Slicer scene files (\*.lys) are included for each case variant
   
 ## Software
 - [CircuitPython 8.2.9](https://circuitpython.org/board/adafruit_qtpy_rp2040/)
@@ -101,11 +106,13 @@ The setup for DELPHI essentially follows the [Quick Start Guide](http://kmkfw.io
 <hr/>
 
 ### TODO
-- Build guide?
-- [Peg](https://peg.software/) compatibility? - if I can figure it out...
+- [ ] Test printing the Edge Case LP
+- [ ] Test printing the Edge Case HP
+- [ ] Build guide?
+- [ ] [Peg](https://peg.software/) compatibility? - if I can figure it out...
 
 <hr/>
 
-**A note regarding hardware and software versions:**
+**Re: hardware and software versions:**
 
 Hardware/software versions will (try to) adhere to [SEMVER](https://semver.org/). It is my intention that hardware and software which share a `MAJOR` version will be compatible with one another (e.g., hardware version 1.2.3 will still be compatible with software version 1.0.0)
