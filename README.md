@@ -109,7 +109,9 @@ The setup for DELPHI essentially follows the [Quick Start Guide](http://kmkfw.io
 - [ ] Test printing the Edge Case LP
 - [ ] Test printing the Edge Case HP
 - [ ] Build guide?
-- [ ] [Peg](https://peg.software/) compatibility? - if I can figure it out...
+- [ ] ~~[Peg](https://peg.software/) compatibility? - if I can figure it out...~~
+
+*Apparently Peg doesn't play nicely with KMK's "Stringy Keymaps", inline comments in keymaps, or `hold-tap` keycodes. Support for Peg is on hold until further notice.*
 
 <hr/>
 
