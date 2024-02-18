@@ -2,7 +2,7 @@
     <img src="/images/DELPHI logo white.svg" height="92" alt="DELPHI_KBD logo in white">
 </p>
 
-Hardware v1.0.2, Software v1.0.2 &copy; 2022-24
+Hardware v1.0.2, Software v1.1.0 &copy; 2022-24
 
 ## Dual Ergolinear Low-Profile Human Interface ##
 DELPHI is a minimal split mechanical keyboard designed to combine ergonomics and an ortholinear layout into a small form factor.
@@ -11,18 +11,6 @@ DELPHI is a minimal split mechanical keyboard designed to combine ergonomics and
     <img src="/images/DELPHI photo.png" height="600" alt="Photo of assembled keyboard">
     <br/>
     <br/>
-</p>
-
-<p align="center">
-    <img src="/images/DELPHI kbd front.png" height="322" alt="PCB render front view">
-    <br/>
-    PCB top view
-</p>
-
-<p align="center">
-    <img src="/images/DELPHI kbd rear.png" height="322"  alt="PCB render rear view">
-    <br/>
-    PCB bottom view
 </p>
 
 <p align="center">
@@ -53,6 +41,20 @@ DELPHI is a minimal split mechanical keyboard designed to combine ergonomics and
   > DELPHI ***might*** also work with the SAMD21 [Adafruit QT PY](https://www.adafruit.com/product/4600) as long as you solder on the "optional"<sup>*</sup> [2MB SPI Flash IC](https://www.adafruit.com/product/4763), but I haven't been able to get this board to work on Windows 11 (YMMV). 
   >
   > <sup>*</sup>KMK firmware will not fit on this board without the extra Flash memory.
+
+## PCB Renders
+<p align="center">
+    <img src="/images/DELPHI kbd front.png" height="322" alt="PCB render front view">
+    <br/>
+    PCB top view
+</p>
+
+<p align="center">
+    <img src="/images/DELPHI kbd rear.png" height="322"  alt="PCB render rear view">
+    <br/>
+    PCB bottom view
+</p>
+
 
 ## Accessories
 ### PCB top and bottom [plates](https://github.com/JRiggles/DELPHI-kbd/blob/main/plates) (photo coming soon!)
