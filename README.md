@@ -2,7 +2,9 @@
     <img src="/images/DELPHI logo white.svg" height="92" alt="DELPHI_KBD logo in white">
 </p>
 
-Hardware v1.0.2, Software v1.1.0 &copy; 2022-24
+Hardware v1.0.2, Software v1.1.0 &copy; 2022-24[^1]
+
+[^1]: Hardware/software versions will (try to) adhere to [SEMVER](https://semver.org/). It is my intention that hardware and software which share a `MAJOR` version will be compatible with one another (e.g., hardware version 1.2.3 will still be compatible with software version 1.0.0)
 
 ## Dual Ergolinear Low-Profile Human Interface ##
 DELPHI is a minimal split mechanical keyboard designed to combine ergonomics and an ortholinear layout into a small form factor.
@@ -100,12 +102,12 @@ The setup for DELPHI essentially follows the [Quick Start Guide](http://kmkfw.io
 5. Download DELPHI [boot.py](https://github.com/JRiggles/DELPHI-kbd/blob/main/firmware/boot.py)
 6. Download DELPHI [main.py](https://github.com/JRiggles/DELPHI-kbd/blob/main/firmware/main.py)
 7. Copy the `kmk` folder to the root of the `DELPHI_L` drive
-8. Copy `boot.py` to the root of the `DELPHI_L` drive[^1]
+8. Copy `boot.py` to the root of the `DELPHI_L` drive[^2]
 9. Copy `main.py` to the root of the `DELPHI_L` drive
 10. Eject the `DELPHI_L` USB drive and disconnect it from your computer
 11. Repeat these steps for the **RIGHT** half of DELPHI, being sure to rename the `CIRCUITPY` drive to `DELPHI_R` at step 3 *(must be exactly this!)*
 
-[^1]: DELPHI hides the CircuitPython USB drive by default. To mount the drive, hold the corresponding homing key (e.g. "T" on the left half or "N" on the right half) while connecting the board. To disable this feature, simply leave the `boot.py` file empty.
+[^2]: DELPHI hides the CircuitPython USB drive by default. To mount the drive, hold the corresponding homing key (e.g. "T" on the left half or "N" on the right half) while connecting the board. To disable this feature, simply leave the `boot.py` file empty.
 
 <hr/>
 
@@ -116,9 +118,3 @@ The setup for DELPHI essentially follows the [Quick Start Guide](http://kmkfw.io
 - [ ] ~~[Peg](https://peg.software/) compatibility? - if I can figure it out...~~
 
 *Apparently Peg doesn't play nicely with KMK's "Stringy Keymaps", inline comments in keymaps, or `hold-tap` keycodes. Support for Peg is on hold until further notice.*
-
-<hr/>
-
-**Re: hardware and software versions:**
-
-Hardware/software versions will (try to) adhere to [SEMVER](https://semver.org/). It is my intention that hardware and software which share a `MAJOR` version will be compatible with one another (e.g., hardware version 1.2.3 will still be compatible with software version 1.0.0)
