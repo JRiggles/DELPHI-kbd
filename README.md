@@ -37,7 +37,7 @@ DELPHI is a minimal split mechanical keyboard designed to combine ergonomics and
   - Raspberry Pi RP2040 chip
   - STEMMA QT connector (a.k.a. Qwiic)
 > [!IMPORTANT]
-> A [STEMMA QT cable](https://www.adafruit.com/product/5385) (or compatible equivalent) is required to connect the halves<br/>300mm or 400mm length is recommended (the cable pictured above is 300mm)
+> A [STEMMA QT cable](https://www.adafruit.com/product/5385) (or compatible equivalent, such as a SparkFun Qwiic cable) is required to connect the halves<br/>300mm or 400mm length is recommended. The cable pictured above is 300mm long.
   <br/>
 
   > DELPHI ***might*** also work with the SAMD21 [Adafruit QT PY](https://www.adafruit.com/product/4600) as long as you solder on the "optional"<sup>*</sup> [2MB SPI Flash IC](https://www.adafruit.com/product/4763), but I haven't been able to get this board to work on Windows 11 (YMMV). 
