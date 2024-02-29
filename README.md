@@ -2,7 +2,7 @@
     <img src="/images/DELPHI logo white.svg" height="92" alt="DELPHI_KBD logo in white">
 </p>
 
-Hardware v1.0.2, Software v1.1.0 &copy; 2022-24[^1]
+Hardware v1.0.2, Software v1.1.1 &copy; 2022-24[^1]
 
 [^1]: Hardware/software versions will (try to) adhere to [SEMVER](https://semver.org/). It is my intention that hardware and software which share a `MAJOR` version will be compatible with one another (e.g., hardware version 1.2.3 will still be compatible with software version 1.0.0)
 
@@ -16,9 +16,9 @@ DELPHI is a minimal split mechanical keyboard designed to combine ergonomics and
 </p>
 
 <p align="center">
-    <img src="/images/delphi_kle_layout.png" height="776"  alt="Keyboard Layout Editor layout">
+    <img src="/images/delphi_kle_layout.png" height="830"  alt="Keyboard Layout Editor layout">
     <br/>
-    <a href="http://www.keyboard-layout-editor.com/##@_name=D.E.L.P.H.I.%20FULL&author=John%20Riggles&pcb:false&plate:false%3B&@_a:7&w:2&d:true%3B&=LAYER%200&_c=%231f1f1f&t=%23ffffff&p=CHICKLET%3B&=W&=F&=P&=G&_x:1%3B&=J&=L&=U&=Y%3B&@=TAB&=Q&=R&=S&_n:true%3B&=T&=D&_x:1%3B&=H&_n:true%3B&=N&=E&=I&_a:5%3B&=%2F:%0A%0A%0A%0A%0A%0A%2F%3B&=%22%0A%0A%0A%0A%0A%0A'%3B&@_a:7%3B&=BKDL&=A&=X&=C&=V&=B&_x:1%3B&=K&=M&_a:5%3B&=%3C%0A%0A%0A%0A%0A%0A,&=%3E%0A%0A%0A%0A%0A%0A.&_a:7%3B&=O&_f:2%3B&=ENTER%3B&@_a:4&f:1%3B&=1shot%0A%0Ahold%0A%0A%0A%0ACTL%0ASFT&_a:7&f:3%3B&=Z&_x:1%3B&=LALT&=LGUI&=MO(1)&_x:1&w:2%3B&=SPC%20%5BMO(2)%5D&_a:5%3B&=%3F%0A%0A%0A%0A%0A%0A%2F%2F&_x:1&a:7%3B&=(&_a:4&f:2%3B&=tap%0A%0Ahold%0A%0A%0A%0A)%0ASFT%3B&@_y:1&c=%23cccccc&t=%23000000&p=&a:7&f:3&w:2&d:true%3B&=LAYER%201&_c=%231f1f1f&t=%23ffffff&p=CHICKLET%3B&=2&=3&=4&=5&_x:1%3B&=6&=7&=8&=9%3B&@=GESC&=1&=&=&_n:true%3B&=&=&_x:1%3B&=&_n:true%3B&=4&=5&=6&=0&_a:5%3B&=%7C%0A%0A%0A%0A%0A%0A%5C%3B&@_a:7%3B&=TRNS&=&=&=&=&=&_x:1%3B&=&=1&=2&=3&=&_f:2%3B&=TRNS%3B&@_f:3%3B&=TRNS&=&_x:1%3B&=TRNS&=TRNS&=TRNS&_x:1&w:2%3B&=TRNS&=0&_x:1%3B&=%5B&_a:4&f:2%3B&=tap%0A%0Ahold%0A%0A%0A%0A%5D%0ASFT%3B&@_y:1&c=%23cccccc&t=%23000000&p=&a:7&f:3&w:2&d:true%3B&=LAYER%202&_c=%231f1f1f&t=%23ffffff&p=CHICKLET%3B&=%2F@&=%23&=$&=%25&_x:1%3B&=%5E&=%2F&&=*&=(%3B&@=~&=!&=&=&_n:true%3B&=PGUP&=&_x:1%3B&=&_n:true%3B&=UP&_a:5%3B&=%2F_%0A%0A%0A%0A%0A%0A-&=+%0A%0A%0A%0A%0A%0A%2F=&_a:7%3B&=)&=%7C%3B&@=TRNS&=&=&=HOME&=PGDN&=END&_x:1%3B&=LEFT&=DOWN&=RIGHT&=&=&_f:2%3B&=TRNS%3B&@_f:3%3B&=TRNS&=&_x:1%3B&=TRNS&=TRNS&=TNRS&_x:1&w:2%3B&=TRNS&=&_x:1%3B&=%7B&_a:4&f:2%3B&=tap%0A%0Ahold%0A%0A%0A%0A%7D%0ASFT">Layout</a> (yes, it's <a href="https://en.wikipedia.org/wiki/Colemak">COLEMAK</a>)
+    <a href="http://www.keyboard-layout-editor.com/##@_name=D.E.L.P.H.I.%20FULL&author=John%20Riggles&pcb:false&plate:false&css=*%20%7B%20%0A%20%20%20%20font-family%2F:%20monospace%2F%3B%20font-weight%2F:%20600%2F%3B%20%7D%3B&@_a:7&f:4&w:2&d:true%3B&=LAYER%200&_c=%231f1f1f&t=%23ffffff&p=CHICKLET&f:3%3B&=W&=F&=P&=G&_x:1%3B&=J&=L&=U&=Y%3B&@=TAB&=Q&=R&=S&_n:true%3B&=T&=D&_x:1%3B&=H&_n:true%3B&=N&=E&=I&_a:5%3B&=%2F:%0A%0A%0A%0A%0A%0A%2F%3B&=%22%0A%0A%0A%0A%0A%0A'%3B&@_a:7%3B&=BKDL&=A&=X&=C&=V&=B&_x:1%3B&=K&=M&_a:5%3B&=%3C%0A%0A%0A%0A%0A%0A,&=%3E%0A%0A%0A%0A%0A%0A.&_a:7%3B&=O&_a:4&f:1&fa@:0&:0&:0&:0&:0&:0&:2&:2%3B%3B&=TAP%2F:%0A%0AHOLD%2F:%0A%0A%0A%0AENT%0ASFT%3B&@=1SH%2F:%0A%0AHOLD%2F:%0A%0A%0A%0ASFT%0ACTL&_a:7&f:3%3B&=Z&_x:1%3B&=LALT&=LGUI&=MO(1)&_x:1&a:4&fa@:1&:0&:1%3B&w:2%3B&=TAP%2F:%0A%0AHOLD%2F:%0A%0A%0A%0ASPACE%0AMO(2)&_a:5&f:3%3B&=%3F%0A%0A%0A%0A%0A%0A%2F%2F&_x:1&a:7&f:3%3B&=(&_f:4%3B&=)%3B&@_y:1&c=%23cccccc&t=%23000000&w:2&d:true%3B&=LAYER%201&_c=%231f1f1f&t=%23ffffff&f:3%3B&=2&=3&=4&=5&_x:1%3B&=6&=7&=8&=9%3B&@=GESC&=1&=&=&_n:true%3B&=&=&_x:1%3B&=&_n:true%3B&=4&=5&=6&=0&_a:5%3B&=%7C%0A%0A%0A%0A%0A%0A%5C%3B&@_a:7%3B&=DEL&=&=&=&=&=&_x:1%3B&=&=1&=2&=3&=.&_f:2&fa@:3%3B%3B&=TRNS%3B&@_f:3%3B&=TRNS&_a:5&fa@:1&:1&:0&:0&:0&:0&:1%3B%3B&=CTL%0ADEL%0A%0A%0A%0A%0AALT&_x:1&a:7&f:3%3B&=TRNS&_f:3%3B&=TRNS&_c=%230069ff&a:5&fa@:1&:1%3B%3B&=%0AMO(1)%0A%0A%0A%0A%0ATRNS&_x:1&c=%231f1f1f&a:7&f:3&w:2%3B&=TRNS&_f:3%3B&=0&_x:1&f:3%3B&=%5B&_f:3%3B&=%5D%3B&@_y:1&c=%23cccccc&t=%23000000&f:4&w:2&d:true%3B&=LAYER%202&_c=%231f1f1f&t=%23ffffff&f:3%3B&=%2F@&=%23&=$&=%25&_x:1%3B&=%5E&=%2F&&=*&=(%3B&@=~&=!&=&=&_n:true%3B&=PGUP&=&_x:1%3B&=&_n:true%3B&=UP&_a:5%3B&=%2F_%0A%0A%0A%0A%0A%0A-&=+%0A%0A%0A%0A%0A%0A%2F=&_a:7%3B&=)&=%7C%3B&@=TRNS&=&=&=HOME&=PGDN&=END&_x:1%3B&=LEFT&=DOWN&=RIGHT&=%2F_&=+&_f:2&fa@:3%3B%3B&=TRNS%3B&@_f:3%3B&=TRNS&=&_x:1%3B&=TRNS&=TRNS&=TRNS&_x:1&c=%230069ff&a:5&fa@:0&:1&:0&:0&:0&:0&:0%3B&w:2%3B&=%0AMO(2)%0A%0A%0A%0A%0ATRNS&_c=%231f1f1f&a:7%3B&=&_x:1%3B&=%7B&=%7D%3B&@_t=%23000000&w:13&d:true%3B&=TRNS%2F:%20Transparent%20key%2F%3B%20Blank%2F:%20No%20operation%20(KC.NO)">Layout</a> (yes, it's <a href="https://en.wikipedia.org/wiki/Colemak">COLEMAK</a>)
 </p>
 
 ## Features
@@ -107,7 +107,7 @@ The setup for DELPHI essentially follows the [Quick Start Guide](http://kmkfw.io
 10. Eject the `DELPHI_L` USB drive and disconnect it from your computer
 11. Repeat these steps for the **RIGHT** half of DELPHI, being sure to rename the `CIRCUITPY` drive to `DELPHI_R` at step 3 *(must be exactly this!)*
 
-[^2]: DELPHI hides the CircuitPython USB drive by default. To mount the drive, hold the corresponding homing key (e.g. "T" on the left half or "N" on the right half) while connecting the board. To disable this feature, simply leave the `boot.py` file empty.
+[^2]: As of firmware v1.1.0, DELPHI hides the CircuitPython USB drive by default. To mount the drive, hold the corresponding homing key (e.g. "T" on the left half or "N" on the right half) while connecting the board. To disable this feature, simply leave the `boot.py` file empty.
 
 <hr/>
 
