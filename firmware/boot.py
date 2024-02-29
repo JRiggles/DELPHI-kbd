@@ -1,5 +1,5 @@
 """
-D.E.L.P.H.I. keyboard - Firmware v1.1.0
+D.E.L.P.H.I. keyboard - Firmware v1.1.1
 
 MIT License
 
@@ -25,12 +25,15 @@ SOFTWARE.
 ==============================================================================
 This boot file will automatically disable the circuitpython USB drive unless
 the "boot" key on the connected board is pressed. The default "boot" keys for
-each half are the keys with the homing dots in the 2nd row ("T" or "N" on the 
+each half are the keys with the homing dots in the 2nd row ("T" or "N" on the
 default COLEMAK layout)
 """
 import board
 import digitalio as dio
 import storage
+from supervisor import set_usb_identification
+
+set_usb_identification(manufacturer='J.Riggles', product='DELPHI_KBD')
 
 DRIVE_NAME = storage.getmount('/').label
 print(DRIVE_NAME)
@@ -52,7 +55,8 @@ boot_key = dio.DigitalInOut(board.RX)
 boot_key.direction = dio.Direction.INPUT
 boot_key.pull = dio.Pull.DOWN
 
-# mount the circuitpython drive only if the board's "boot" key is pressed
+# mount the circuitpython drive only if the "boot" key on the connected board
+# is pressed
 # ("T" or "N" on the default layout - the keys with homing dots in the 2nd row)
 try:
     if boot_key.value:
