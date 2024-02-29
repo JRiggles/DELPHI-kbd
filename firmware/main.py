@@ -1,5 +1,5 @@
 """
-D.E.L.P.H.I. keyboard - Firmware v1.1.0
+D.E.L.P.H.I. keyboard - Firmware v1.1.1
 
 MIT License
 
@@ -28,6 +28,7 @@ import board as bd
 from storage import getmount
 
 from kmk.extensions.stringy_keymaps import StringyKeymaps
+from kmk.handlers.sequences import simple_key_sequence
 from kmk.keys import KC
 from kmk.kmk_keyboard import KMKKeyboard
 from kmk.modules.holdtap import HoldTap
@@ -39,7 +40,7 @@ from kmk.scanners import DiodeOrientation
 keyboard = KMKKeyboard()
 # keyboard.debug_enabled = True
 keyboard.diode_orientation = DiodeOrientation.COL2ROW
-# keyboard.rollover_cols_every_rows = 4
+keyboard.rollover_cols_every_rows = 4
 
 # get drive name to determine which row/col pinout to use (left or right)
 # so we can use the same main.py for both halves
@@ -74,6 +75,20 @@ keyboard.modules.append(split)  # enable split
 stringyKeymaps = StringyKeymaps()
 keyboard.extensions.append(stringyKeymaps)
 
+# custom sequences
+CTRL_ALT_DEL = simple_key_sequence(
+    (
+        KC.LCTRL(no_release=True),
+        KC.LALT(no_release=True),
+        KC.DELETE(no_release=True),
+        KC.MACRO_SLEEP_MS(25),
+        KC.LCTRL(no_press=True),
+        KC.LALT(no_press=True),
+        KC.DELETE(no_press=True),
+    )
+)
+
+# keymap
 keyboard.keymap = [
     [  # layer 0 (default)
         # row 1 left
@@ -87,13 +102,12 @@ keyboard.keymap = [
         # row 3 left
         'BKDL', 'A', 'X', 'C', 'V', 'B',
         # row 3 right
-        'K', 'M', 'COMMA', 'DOT', 'O', 'ENTER',
+        'K', 'M', 'COMMA', 'DOT', 'O', KC.HT(KC.ENTER, KC.RSHIFT),
         # row 4 left
-        KC.HT(KC.OS(KC.LCTRL), KC.LSHIFT), 'Z',  'NO', 'LALT', 'LGUI',
+        KC.HT(KC.OS(KC.LSHIFT), KC.LCTRL), 'Z',  'NO', 'LALT', 'LGUI',
         KC.MO(1),
         # row 4 right
-        KC.LT(2, KC.SPACE), 'NO', 'SLASH', 'NO', 'LEFT_PAREN',
-        KC.HT(KC.RIGHT_PAREN, KC.RSHIFT),
+        KC.LT(2, KC.SPACE), 'NO', 'SLASH', 'NO', 'LEFT_PAREN', KC.RIGHT_PAREN,
     ],
     [  # layer 1
         # row 1 left
@@ -105,11 +119,11 @@ keyboard.keymap = [
         # row 2 right
         'NO', 'N4', 'N5', 'N6', 'N0', 'BSLASH',
         # row 3 left
-        'TRNS', 'NO', 'NO', 'NO', 'NO', 'NO',
+        'DELETE', 'NO', 'NO', 'NO', 'NO', 'NO',
         # row 3 right
-        'NO', 'N1', 'N2', 'N3', 'NO', 'TRNS',
+        'NO', 'N1', 'N2', 'N3', 'DOT', 'TRNS',
         # row 4 left
-        'TRNS', 'NO',  'NO', 'TRNS', 'TRNS', 'TRNS',
+        'TRNS', CTRL_ALT_DEL,  'NO', 'TRNS', 'TRNS', 'TRNS',
         # row 4 right
         'TRNS', 'NO', 'N0', 'NO', 'LBRACKET',
         KC.HT(KC.RBRACKET, KC.RSHIFT),
@@ -127,7 +141,7 @@ keyboard.keymap = [
         # row 3 left
         'TRNS', 'NO', 'NO', 'HOME', 'PGDOWN', 'END',
         # row 3 right
-        'LEFT', 'DOWN', 'RGHT', 'NO', 'NO', 'TRNS',
+        'LEFT', 'DOWN', 'RGHT', 'UNDERSCORE', 'PLUS', 'TRNS',
         # row 4 left
         'TRNS', 'NO',  'NO', 'TRNS', 'TRNS', 'TRNS',
         # row 4 right
@@ -135,6 +149,7 @@ keyboard.keymap = [
         KC.HT(KC.RIGHT_CURLY_BRACE, KC.RSHIFT),
     ],
 ]
+# keymap
 
 
 if __name__ == '__main__':
