@@ -59,7 +59,7 @@ DELPHI is a minimal split mechanical keyboard designed to combine ergonomics and
 
 
 ## Accessories
-### PCB top and bottom [plates](https://github.com/JRiggles/DELPHI-kbd/blob/main/plates) (photo coming soon!)
+### PCB top and bottom [plates](https://github.com/JRiggles/DELPHI-kbd/blob/main/plates) 
 > [!NOTE]
 >  - One plate set covers one *half* of DELPHI - you'll need to use two sets to cover both halves
 >  - The main PCB mounts to bottom plate via qty. 5 M2&times;6mm standoffs ***per-half***
@@ -68,13 +68,13 @@ DELPHI is a minimal split mechanical keyboard designed to combine ergonomics and
 <p align="center">
     <img src="/images/DELPHI plate front.png" height="322" alt="PCB render front view">
     <br/>
-    Plates front view (i.e., left side top and bottom plates)
+    Plates front view (i.e., left side top and bottom plates) - <a href="https://github.com/JRiggles/DELPHI-kbd/blob/main/images/Plates%20LEFT.jpeg">photo here</a>
 </p>
 
 <p align="center">
     <img src="/images/DELPHI plate rear.png" height="322"  alt="PCB render rear view">
     <br/>
-    Plates rear view (i.e., right side bottom and top plates)
+    Plates rear view (i.e., right side bottom and top plates) - <a href="https://github.com/JRiggles/DELPHI-kbd/blob/main/images/Plates%20RIGHT.jpeg">photo here</a>
 </p>
 
 ### 3D printable case: the ["Edge Case"](https://github.com/JRiggles/DELPHI-kbd/blob/main/cases) 
