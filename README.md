@@ -112,9 +112,10 @@ The setup for DELPHI essentially follows the [Quick Start Guide](http://kmkfw.io
 <hr/>
 
 ### TODO
+- [ ] Update to CircuitPython 9.0.4
+- [ ] Build guide?
 - [x] Test printing the Edge Case LP
 - [x] Test printing the Edge Case HP
-- [ ] Build guide?
 - [ ] ~~[Peg](https://peg.software/) compatibility? - if I can figure it out...~~
 
 *Apparently Peg doesn't play nicely with KMK's "Stringy Keymaps", inline comments in keymaps, or `hold-tap` keycodes. Support for Peg is on hold until further notice.*
