@@ -10,7 +10,7 @@ Hardware v1.0.2, Software v1.1.1 &copy; 2022-24[^1] ![Static Badge](https://img.
 DELPHI is a minimal split mechanical keyboard designed to combine ergonomics and an ortholinear layout into a small form factor.
 
 <p align="center">
-    <img src="/images/IMG_3758.jpg" height="600" alt="Photo of assembled keyboard">
+    <img src="/images/IMG_3758.jpg" height="600" alt="Photo of assembled keyboard with PCB plates and the 'LP' version of the 'Edge Case'">
     <br/>
     <br/>
 </p>
