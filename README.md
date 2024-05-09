@@ -109,7 +109,7 @@ The setup for DELPHI essentially follows the [Quick Start Guide](http://kmkfw.io
 
 [^2]: As of firmware v1.1.0, DELPHI hides the CircuitPython USB drive by default. To mount the drive, hold the corresponding homing key (e.g. "T" on the left half or "N" on the right half) while connecting the board. To disable this feature, simply leave the `boot.py` file empty.
 
-<hr/>
+##
 
 ### TODO
 - [ ] Update to CircuitPython 9.0.4
