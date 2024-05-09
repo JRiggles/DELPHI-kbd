@@ -2,7 +2,7 @@
     <img src="/images/DELPHI logo white.svg" height="92" alt="DELPHI_KBD logo in white">
 </p>
 
-Hardware v1.0.2, Software v1.1.1 &copy; 2022-24[^1]
+Hardware v1.0.2, Software v1.1.1 &copy; 2022-24[^1] ![Static Badge](https://img.shields.io/badge/%20-0E1116?style=flat-square&logo=opensourcehardware&logoColor=fff)
 
 [^1]: Hardware/software versions will (try to) adhere to [SEMVER](https://semver.org/). It is my intention that hardware and software which share a `MAJOR` version will be compatible with one another (e.g., hardware version 1.2.3 will still be compatible with software version 1.0.0)
 
