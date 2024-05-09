@@ -112,8 +112,8 @@ The setup for DELPHI essentially follows the [Quick Start Guide](http://kmkfw.io
 <hr/>
 
 ### TODO
-- [ ] Test printing the Edge Case LP
-- [ ] Test printing the Edge Case HP
+- [x] Test printing the Edge Case LP
+- [x] Test printing the Edge Case HP
 - [ ] Build guide?
 - [ ] ~~[Peg](https://peg.software/) compatibility? - if I can figure it out...~~
 
