@@ -1,5 +1,5 @@
 """
-D.E.L.P.H.I. keyboard - Firmware v1.1.1
+D.E.L.P.H.I. keyboard - Firmware v1.1.2
 
 MIT License
 
