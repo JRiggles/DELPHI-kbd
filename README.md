@@ -2,7 +2,7 @@
     <img src="/images/DELPHI logo white.svg" height="92" alt="DELPHI_KBD logo in white">
 </p>
 
-Hardware v1.0.2, Software v1.1.1 &copy; 2022-24[^1] ![Static Badge](https://img.shields.io/badge/%20-0E1116?style=flat-square&logo=opensourcehardware&logoColor=fff)
+Hardware v1.0.2, Software v1.1.2 &copy; 2022-24[^1] ![Static Badge](https://img.shields.io/badge/%20-0E1116?style=flat-square&logo=opensourcehardware&logoColor=fff)
 
 [^1]: Hardware/software versions will (try to) adhere to [SEMVER](https://semver.org/). It is my intention that hardware and software which share a `MAJOR` version will be compatible with one another (e.g., hardware version 1.2.3 will still be compatible with software version 1.0.0)
 
@@ -88,15 +88,15 @@ There are two case variants:
   > Presupported Lychee Slicer scene files (\*.lys) are included for each case variant
   
 ## Software
-- [CircuitPython 8.2.9](https://circuitpython.org/board/adafruit_qtpy_rp2040/)
+- [CircuitPython 8.2.9 or later](https://circuitpython.org/board/adafruit_qtpy_rp2040/)
 - [KMK Firmware](https://github.com/KMKfw/kmk_firmware)
 
 ## Software Setup
 
-The setup for DELPHI essentially follows the [Quick Start Guide](http://kmkfw.io/docs/Getting_Started#tldr-quick-start-guide) for KMK, with some changes:
+The setup for DELPHI essentially follows the [TL;DR Quick start guide](https://kmkfw.io/Getting_Started/) for KMK, with some changes:
 
 1. Connect the **LEFT** half of DELPHI to your computer via USB
-2. Download and install [CircuitPython 8.2.9](https://circuitpython.org/board/adafruit_qtpy_rp2040/) for the Adafruit QT Py RP2040
+2. Download and install [CircuitPython](https://circuitpython.org/board/adafruit_qtpy_rp2040/) for the Adafruit QT Py RP2040
 3. [Rename](https://learn.adafruit.com/welcome-to-circuitpython/renaming-circuitpy) the `CIRCUITPY` USB drive to `DELPHI_L` *(must be exactly this!)*
 4. Download and unzip [KMK Firmware](https://github.com/KMKfw/kmk_firmware)
 5. Download DELPHI [boot.py](https://github.com/JRiggles/DELPHI-kbd/blob/main/firmware/boot.py)
@@ -112,8 +112,8 @@ The setup for DELPHI essentially follows the [Quick Start Guide](http://kmkfw.io
 ##
 
 ### TODO
-- [ ] Update to CircuitPython 9.0.4
 - [ ] Build guide?
+- [x] Update to CircuitPython 9.0.4
 - [x] Test printing the Edge Case LP
 - [x] Test printing the Edge Case HP
 - [ ] ~~[Peg](https://peg.software/) compatibility? - if I can figure it out...~~
