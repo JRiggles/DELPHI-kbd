@@ -10,7 +10,7 @@ Hardware v1.0.2, Software v1.1.2 &copy; 2022-24[^1] ![Static Badge](https://img.
 DELPHI is a minimal split mechanical keyboard designed to combine ergonomics and an ortholinear layout into a small form factor.
 
 <p align="center">
-    <img src="/images/IMG_3758.jpg" height="600" alt="Photo of assembled keyboard with PCB plates and the 'LP' version of the 'Edge Case'">
+    <img src="/images/IMG_3758.jpg" height="600" alt="Photo of assembled keyboard with PCB plates and the 'HP' version of the 'Edge Case'">
     <br/>
     <br/>
 </p>
@@ -83,8 +83,8 @@ DELPHI is a minimal split mechanical keyboard designed to combine ergonomics and
 >  - The STL is for the LEFT side; it will need to be *mirrored* in your slicer of choice to accommodate the RIGHT side
 
 There are two case variants:
-  - Edge Case LP (low-profile, lines up with bottom plate and main PCB; pictured above on assembled keyboard)
-  - Edge Case HP (high-profile, lines up with bottom plate and top plate)
+  - Edge Case LP (low-profile, lines up with bottom plate and main PCB)
+  - Edge Case HP (high-profile, lines up with bottom plate and top plate; pictured above on assembled keyboard)
   > Presupported Lychee Slicer scene files (\*.lys) are included for each case variant
   
 ## Software
