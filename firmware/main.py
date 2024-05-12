@@ -1,5 +1,5 @@
 """
-D.E.L.P.H.I. keyboard - Firmware v1.1.1
+D.E.L.P.H.I. keyboard - Firmware v1.1.2
 
 MIT License
 
@@ -100,14 +100,14 @@ keyboard.keymap = [
         # row 2 right
         'H', 'N', 'E', 'I', 'SCOLON', 'QUOTE',
         # row 3 left
-        'BKDL', 'A', 'X', 'C', 'V', 'B',
+        'BSPACE', 'A', 'X', 'C', 'V', 'B',
         # row 3 right
         'K', 'M', 'COMMA', 'DOT', 'O', KC.HT(KC.ENTER, KC.RSHIFT),
         # row 4 left
         KC.HT(KC.OS(KC.LSHIFT), KC.LCTRL), 'Z',  'NO', 'LALT', 'LGUI',
         KC.MO(1),
         # row 4 right
-        KC.LT(2, KC.SPACE), 'NO', 'SLASH', 'NO', 'LEFT_PAREN', KC.RIGHT_PAREN,
+        KC.LT(2, KC.SPACE), 'NO', 'SLASH', 'NO', 'LEFT_PAREN', 'RIGHT_PAREN',
     ],
     [  # layer 1
         # row 1 left
@@ -125,8 +125,7 @@ keyboard.keymap = [
         # row 4 left
         'TRNS', CTRL_ALT_DEL,  'NO', 'TRNS', 'TRNS', 'TRNS',
         # row 4 right
-        'TRNS', 'NO', 'N0', 'NO', 'LBRACKET',
-        KC.HT(KC.RBRACKET, KC.RSHIFT),
+        'TRNS', 'NO', 'N0', 'NO', 'LBRACKET', 'RBRACKET',
 
     ],
     [  # layer 2
@@ -143,10 +142,10 @@ keyboard.keymap = [
         # row 3 right
         'LEFT', 'DOWN', 'RGHT', 'UNDERSCORE', 'PLUS', 'TRNS',
         # row 4 left
-        'TRNS', 'NO',  'NO', 'TRNS', 'TRNS', 'TRNS',
+        'TRNS', 'GRAVE',  'NO', 'TRNS', 'TRNS', 'TRNS',
         # row 4 right
-        'TRNS', 'NO', 'NO', 'NO', 'LEFT_CURLY_BRACE',
-        KC.HT(KC.RIGHT_CURLY_BRACE, KC.RSHIFT),
+        'TRNS', 'NO', 'QUESTION', 'NO', 'LEFT_CURLY_BRACE',
+        'RIGHT_CURLY_BRACE',
     ],
 ]
 # keymap
