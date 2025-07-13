@@ -103,8 +103,8 @@ The setup for DELPHI essentially follows the [TL;DR Quick start guide](https://k
 4. Download and unzip [KMK Firmware](https://github.com/KMKfw/kmk_firmware)
 5. Download DELPHI [boot.py](https://github.com/JRiggles/DELPHI-kbd/blob/main/firmware/boot.py)
 6. Download DELPHI [main.py](https://github.com/JRiggles/DELPHI-kbd/blob/main/firmware/main.py)
-7. Copy the `kmk` folder to the root of the `DELPHI_L` drive
-8. Copy `boot.py` to the root of the `DELPHI_L` drive[^2]
+7. Copy the `kmk` folder to the root of the `DELPHI_L` drive[^2]
+8. Copy `boot.py` to the root of the `DELPHI_L` drive
 9. Copy `main.py` to the root of the `DELPHI_L` drive
 10. Eject the `DELPHI_L` USB drive and disconnect it from your computer
 11. Repeat these steps for the **RIGHT** half of DELPHI, being sure to rename the `CIRCUITPY` drive to `DELPHI_R` at step 3 *(must be exactly this!)*
