@@ -95,7 +95,7 @@ There are two case variants:
 
 ## Software Setup
 
-The setup for DELPHI essentially follows the [TL;DR Quick start guide](https://kmkfw.io/Getting_Started/) for KMK, with some changes:
+The setup for DELPHI essentially follows the [TL;DR Quick start guide]([https://kmkfw.io/Getting_Started/](https://github.com/KMKfw/kmk_firmware/blob/main/docs/en/Getting_Started.md)) for KMK, with some changes:
 
 1. Connect the **LEFT** half of DELPHI to your computer via USB
 2. Download and install [CircuitPython](https://circuitpython.org/board/adafruit_qtpy_rp2040/) for the Adafruit QT Py RP2040
