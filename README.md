@@ -107,7 +107,8 @@ The setup for DELPHI essentially follows the [TL;DR Quick start guide](https://k
 8. Copy `boot.py` to the root of the `DELPHI_L` drive
 9. Copy `main.py` to the root of the `DELPHI_L` drive
 10. Eject the `DELPHI_L` USB drive and disconnect it from your computer
-11. Repeat these steps for the **RIGHT** half of DELPHI, being sure to rename the `CIRCUITPY` drive to `DELPHI_R` at step 3 *(must be exactly this!)*
+
+Repeat these steps for the **RIGHT** half of DELPHI, being sure to rename the `CIRCUITPY` drive to `DELPHI_R` at step 3 *(must be exactly this!)*
 
 [^2]: As of firmware v1.1.0, DELPHI hides the CircuitPython USB drive by default. To mount the drive, hold the corresponding homing key (e.g. "T" on the left half or "N" on the right half) while connecting the board. To disable this feature, simply leave the `boot.py` file empty.
 
