@@ -2,7 +2,9 @@
     <img src="/images/DELPHI logo white.svg" height="92" alt="DELPHI_KBD logo in white">
 </p>
 
-Hardware v1.0.2, Software v1.1.2 &copy; 2022-24[^1] ![Static Badge](https://img.shields.io/badge/%20-0E1116?style=flat-square&logo=opensourcehardware&logoColor=fff)
+Hardware v1.0.2, Software v1.2.0 &copy; 2022-25[^1] ![Static Badge](https://img.shields.io/badge/%20-0E1116?style=flat-square&logo=opensourcehardware&logoColor=fff)
+
+*Current version runs the latest KMK as of July 13th '25, and CircuitPython version 9.2.8*
 
 [^1]: Hardware/software versions will (try to) adhere to [SEMVER](https://semver.org/). It is my intention that hardware and software which share a `MAJOR` version will be compatible with one another (e.g., hardware version 1.2.3 will still be compatible with software version 1.0.0)
 
@@ -113,9 +115,3 @@ The setup for DELPHI essentially follows the [TL;DR Quick start guide](https://k
 
 ### TODO
 - [ ] Build guide?
-- [x] Update to CircuitPython 9.0.4
-- [x] Test printing the Edge Case LP
-- [x] Test printing the Edge Case HP
-- [ ] ~~[Peg](https://peg.software/) compatibility? - if I can figure it out...~~
-
-*Apparently Peg doesn't play nicely with KMK's "Stringy Keymaps", inline comments in keymaps, or `hold-tap` keycodes. Support for Peg is on hold until further notice.*
