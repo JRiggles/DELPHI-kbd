@@ -1,9 +1,9 @@
 """
-D.E.L.P.H.I. keyboard - Firmware v1.1.2
+D.E.L.P.H.I. keyboard - Firmware v1.2.0
 
 MIT License
 
-Copyright (c) 2022-24 John Riggles
+Copyright (c) 2022-25 John Riggles
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -28,13 +28,13 @@ import board as bd
 from storage import getmount
 
 from kmk.extensions.stringy_keymaps import StringyKeymaps
-from kmk.handlers.sequences import simple_key_sequence
 from kmk.keys import KC
 from kmk.kmk_keyboard import KMKKeyboard
 from kmk.modules.holdtap import HoldTap
 from kmk.modules.layers import Layers
-from kmk.modules.oneshot import OneShot
+from kmk.modules.macros import Delay, Macros, Press, Release
 from kmk.modules.split import Split
+from kmk.modules.sticky_keys import StickyKeys
 from kmk.scanners import DiodeOrientation
 
 keyboard = KMKKeyboard()
@@ -59,96 +59,64 @@ else:
     )
 
 # instantiate modules and extensions
-holdtap = HoldTap()
-keyboard.modules.append(holdtap)
-
-oneshot = OneShot()
-keyboard.modules.append(oneshot)
-
-layers = Layers()
-keyboard.modules.append(layers)
-
+keyboard.modules.append(HoldTap())
+keyboard.modules.append(Layers())
+keyboard.modules.append(Macros())
+keyboard.modules.append(StickyKeys())
 # enable split - data pin SDA1 is the STEMMA QT data pin
 split = Split(data_pin=bd.SDA1, use_pio=True, split_flip=False)
 keyboard.modules.append(split)  # enable split
-
+# enable stringy keymaps
 stringyKeymaps = StringyKeymaps()
 keyboard.extensions.append(stringyKeymaps)
 
-# custom sequences
-CTRL_ALT_DEL = simple_key_sequence(
-    (
-        KC.LCTRL(no_release=True),
-        KC.LALT(no_release=True),
-        KC.DELETE(no_release=True),
-        KC.MACRO_SLEEP_MS(25),
-        KC.LCTRL(no_press=True),
-        KC.LALT(no_press=True),
-        KC.DELETE(no_press=True),
-    )
+# macros
+CTL_ALT_DEL = KC.MACRO(
+    Press(KC.LCTL),
+    Press(KC.LALT),
+    Press(KC.DELETE),
+    Delay(25),
+    Release(KC.LCTL),
+    Release(KC.LALT),
+    Release(KC.DELETE),
 )
+# hold-tap keys
+SHIFT_CTRL = KC.HT(KC.SK(KC.LSHIFT), KC.LCTRL)  # tap LSHIFT, hold LCTRL
+SHIFT_ENTER = KC.HT(KC.ENTER, KC.RSHIFT, prefer_hold=True)
 
 # keymap
 keyboard.keymap = [
     [  # layer 0 (default)
-        # row 1 left
-        'NO', 'NO', 'W', 'F', 'P', 'G',
-        # row 1 right
-        'J', 'L', 'U', 'Y', 'NO', 'NO',
-        # row 2 left
-        'TAB', 'Q', 'R', 'S', 'T', 'D',
-        # row 2 right
-        'H', 'N', 'E', 'I', 'SCOLON', 'QUOTE',
-        # row 3 left
-        'BSPACE', 'A', 'X', 'C', 'V', 'B',
-        # row 3 right
-        'K', 'M', 'COMMA', 'DOT', 'O', KC.HT(KC.ENTER, KC.RSHIFT),
-        # row 4 left
-        KC.HT(KC.OS(KC.LSHIFT), KC.LCTRL), 'Z',  'NO', 'LALT', 'LGUI',
-        KC.MO(1),
-        # row 4 right
-        KC.LT(2, KC.SPACE), 'NO', 'SLASH', 'NO', 'LEFT_PAREN', 'RIGHT_PAREN',
+        # row 1 left                                        # row 1 right
+        'NO', 'NO', 'W', 'F', 'P', 'G',                     'J', 'L', 'U', 'Y', 'NO', 'NO',
+        # row 2 left                                        # row 2 right
+        'TAB', 'Q', 'R', 'S', 'T', 'D',                     'H', 'N', 'E', 'I', 'SCOLON', 'QUOTE',
+        # row 3 left                                        # row 3 right
+        'BSPACE', 'A', 'X', 'C', 'V', 'B',                  'K', 'M', 'COMMA', 'DOT', 'O', SHIFT_ENTER,
+        # row 4 left                                        # row 4 right
+        SHIFT_CTRL, 'Z',  'NO', 'LALT', 'LGUI', KC.MO(1),   KC.LT(2, KC.SPACE), 'NO', 'SLASH', 'NO', 'LPRN', 'RPRN',
     ],
     [  # layer 1
-        # row 1 left
-        'NO', 'NO', 'N2', 'N3', 'N4', 'N5',
-        # row 1 right
-        'N6', 'N7', 'N8', 'N9', 'NO', 'NO',
-        # row 2 left
-        'GESC', 'N1', 'NO', 'NO', 'NO', 'NO',
-        # row 2 right
-        'NO', 'N4', 'N5', 'N6', 'N0', 'BSLASH',
-        # row 3 left
-        'DELETE', 'NO', 'NO', 'NO', 'NO', 'NO',
-        # row 3 right
-        'NO', 'N1', 'N2', 'N3', 'DOT', 'TRNS',
-        # row 4 left
-        'TRNS', CTRL_ALT_DEL,  'NO', 'TRNS', 'TRNS', 'TRNS',
-        # row 4 right
-        'TRNS', 'NO', 'N0', 'NO', 'LBRACKET', 'RBRACKET',
-
+        # row 1 left                                        # row 1 right
+        'NO', 'NO', 'N2', 'N3', 'N4', 'N5',                 'N6', 'N7', 'N8', 'N9', 'NO', 'NO',
+        # row 2 left                                        # row 2 right
+        'ESCAPE', 'N1', 'NO', 'NO', 'NO', 'NO',             'NO', 'N4', 'N5', 'N6', 'N0', 'BSLASH',
+        # row 3 left                                        # row 3 right
+        'DELETE', 'NO', 'NO', 'NO', 'NO', 'NO',             'NO', 'N1', 'N2', 'N3', 'DOT', 'TRNS',
+        # row 4 left                                            # row 4 right
+        'TRNS', CTL_ALT_DEL,  'NO', 'TRNS', 'TRNS', 'TRNS',    'TRNS', 'NO', 'N0', 'NO', 'LBRC', 'RBRC',
     ],
     [  # layer 2
-        # row 1 left
-        'NO', 'NO', 'AT', 'HASH', 'DOLLAR', 'PERCENT',
-        # row 1 right
-        'CIRCUMFLEX', 'AMPERSAND', 'ASTERISK', 'LEFT_PAREN', 'NO', 'NO',
-        # row 2 left
-        'TILDE', 'EXCLAIM', 'NO', 'NO', 'PGUP', 'NO',
-        # row 2 right
-        'NO', 'UP', 'MINUS', 'EQUAL', 'RIGHT_PAREN', 'PIPE',
-        # row 3 left
-        'TRNS', 'NO', 'NO', 'HOME', 'PGDOWN', 'END',
-        # row 3 right
-        'LEFT', 'DOWN', 'RGHT', 'UNDERSCORE', 'PLUS', 'TRNS',
-        # row 4 left
-        'TRNS', 'GRAVE',  'NO', 'TRNS', 'TRNS', 'TRNS',
-        # row 4 right
-        'TRNS', 'NO', 'QUESTION', 'NO', 'LEFT_CURLY_BRACE',
-        'RIGHT_CURLY_BRACE',
+        # row 1 left                                        # row 1 right
+        'NO', 'NO', 'AT', 'HASH', 'DOLLAR', 'PERCENT',      'CIRCUMFLEX', 'AMPERSAND', 'ASTERISK', 'LPRN', 'NO', 'NO',
+        # row 2 left                                        # row 2 right
+        'TILDE', 'EXCLAIM', 'NO', 'NO', 'PGUP', 'NO',       'NO', 'UP', 'MINUS', 'EQUAL', 'RPRN', 'PIPE',
+        # row 3 left                                        # row 3 right
+        'TRNS', 'NO', 'NO', 'HOME', 'PGDOWN', 'END',        'LEFT', 'DOWN', 'RGHT', 'UNDS', 'PLUS', 'TRNS',
+        # row 4 left                                        # row 4 right
+        'TRNS', 'GRAVE',  'NO', 'TRNS', 'TRNS', 'TRNS',     'TRNS', 'NO', 'QUESTION', 'NO', 'LCBR', 'RCBR',
     ],
 ]
-# keymap
 
 
 if __name__ == '__main__':
